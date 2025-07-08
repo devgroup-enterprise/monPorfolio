@@ -1,12 +1,16 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import {TooltipProvider} from "./components/ui/tooltip";
+import {Toaster} from "sonner";
 
 const queryClient = new QueryClient();
+
+function Sonner() {
+  return null;
+}
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
